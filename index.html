@@ -81,28 +81,49 @@
 <!-- ScrollReveal CDN -->
 <script src="https://unpkg.com/scrollreveal"></script>
 <script>
-  // Initialize ScrollReveal
+  // Animate sections
   ScrollReveal().reveal('.section', {
     origin: 'bottom',
-    distance: '50px',
-    duration: 800,
-    delay: 200,
-    reset: false,
-    easing: 'ease-in-out'
+    distance: '60px',
+    duration: 1000,
+    delay: 100,
+    easing: 'ease-in-out',
+    reset: false
   });
 
+  // Animate hero
   ScrollReveal().reveal('.hero-content', {
     origin: 'left',
-    distance: '70px',
-    duration: 1000,
-    delay: 300
+    distance: '80px',
+    duration: 1200,
+    delay: 200,
+    reset: false
   });
 
+  // Animate each card in projects
   ScrollReveal().reveal('.card', {
     interval: 200,
     origin: 'bottom',
+    distance: '30px',
+    duration: 900,
+    reset: false
+  });
+
+  // Animate each skill
+  ScrollReveal().reveal('.skills-list li', {
+    interval: 100,
+    origin: 'top',
     distance: '20px',
-    duration: 700,
+    duration: 800,
+    reset: false
+  });
+
+  // Animate contact form inputs
+  ScrollReveal().reveal('.contact-form input, .contact-form textarea, .contact-form button', {
+    interval: 100,
+    origin: 'bottom',
+    distance: '20px',
+    duration: 800,
     reset: false
   });
 </script>

@@ -175,7 +175,31 @@ footer {
   padding: 1rem;
   margin-top: 3rem;
 }
+.card, .btn, .skills-list li, .navbar {
+  transition: all 0.3s ease;
+}
 
+.card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.skills-list li:hover {
+  background: #ff6b6b;
+  color: white;
+  transform: scale(1.05);
+}
+
+.navbar.scrolled {
+  background-color: #000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #ff6b6b;
+  outline: none;
+}
 /* Responsive layout */
 @media (max-width: 768px) {
   .hero-content h1 {
