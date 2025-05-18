@@ -42,11 +42,13 @@ body {
   top: 0;
   z-index: 1000;
 }
-
 .navbar .logo {
   color: #fff;
   font-size: 1.5rem;
   font-weight: bold;
+  display: flex; 
+  align-items: center; 
+  height: 100%;
 }
 
 .nav-links {
@@ -185,7 +187,7 @@ body {
 }
 .tech-icons img {
   width: 72px;
-  height: 40px;
+  height: auto;
   transition: transform 0.3s;
 }
 .tech-icons img:hover {
@@ -299,6 +301,37 @@ footer {
 .contact-form textarea:focus {
   border-color: #ff6b6b;
   outline: none;
+}
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50px;
+  text-align: center;
+}
+
+.skill-item img {
+  width: 60px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.skill-item img:hover {
+  transform: scale(1.2);
+}
+
+.skill-item p {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #333;
 }
 /* Responsive layout */
 @media (max-width: 768px) {
